@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Косынка</title>
+</head>
+<style>
+    img{
+        width: 500px;
+    }
+    #table{
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+<body>
+    <div id="card" onclick="show()">
+        <img src="backcard.webp" alt="">
+    </div>
+    <div id="table"></div>
+</body>
+<script>
+    let card_name=['6.png', '7.png', '08.png', '9.png', '10.png', 'corol.png', 'queen.png', '2.jpg'];
+
+    let table = document.getElementById('table');
+    let number = 0
+
+    function show(){
+        let random = Math.floor(Math.random() *card_name.length);
+        console.log (random);
+    let card = document.createElement('div');
+    let card_file_name = '<img src="' + card_name[random] + '">';
+    card.innerHTML = card_file_name;
+    table.append(card)
+    card_name.splice(random, 1);
+    console.log(card_name);
+    }
+
+</script>
+</html>

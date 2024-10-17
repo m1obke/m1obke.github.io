@@ -1,0 +1,29 @@
+body {
+    font-family: monospace;
+}
+
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  #msg {
+    font-family: monospace;
+  }
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .monitors{
+    border: 5px;
+    width: 10%;
+    height: 10%;
+  }
+</style>
