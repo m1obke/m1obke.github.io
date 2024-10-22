@@ -6,9 +6,18 @@
   <title>Document</title>
 </head>
 <body>
-
+  <div id="diagram"></div>
 </body>
 <script>
+  let names = ['Москва', 'Рим', 'Париж'];
+  let population = [80000000, 50000, 700000]
+
+  let diagram = document.getElementById('diagram')
+
+  let elem2 = document.createElement('div')
+  elem2.innerText = names[1]
+  diagram.append(elem2);
+  
   let elem = document.createElement('div')
   elem.style.width = '50px'
   elem.style.height = '200px'
