@@ -18,6 +18,16 @@
     a.style.fontSize = "20"
     a.innerHTML = i
     document.body.append(a);
+
+    for(let b = 1;b <10;b++){
+    let redcube = document.createElement('div');
+    redcube.style.width = "10px";
+    redcube.style.height = "10px";
+    redcube.style.backgroundColor = "red";
+    redcube.innerHTML = b
+
+    a.append(redcube);
+    }
     }
 </script>
 </html>
